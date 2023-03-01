@@ -1,0 +1,72 @@
+.container {
+  max-width: 960px;
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+
+}
+.galerie {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+  justify-items: center; 
+  align-content: space-around;
+
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tmb {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 120px;
+  height: 90px;
+  text-align: center;
+  color: black;
+  background-color: cornflowerblue;
+  font-size: small;
+  font-style: italic;
+  
+}
+
+.tit {
+    
+  height: 30px;
+  background-color: azure;
+  padding: 3px;
+}
+p{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img {
+  width: 100%;
+  background-color: ;
+}
+
+@media screen and (max-width: 1024px) {
+  .galerie {
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .galerie {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 414px) {
+  .galerie {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
